@@ -26,7 +26,7 @@ const path = require('path');
 app.set("view engine","ejs");
 app.set("views","src/views");
 
-app.get('/teste', (req, res) => {
+app.get('/', (req, res) => {
     res.contentType('text/html'); //se inserir um aplication/html provavelmente o navegador vai fazer download da página
     //res.status(200).send("<h3>teste por express text/html</h3>");
     var conteudo = "esse é um teste de conteudo";
