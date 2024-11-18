@@ -1,0 +1,70 @@
+{
+    "workflowApiVersion": "1.1",
+    "metaData": {
+        "icon": "",
+        "iconSmall": "",
+        "category": "message"
+    },
+    "type": "REST",
+    "lang": {
+        "en-US": {
+            "name": "Teste BM",
+          "description": "A Template for a custom Journey Builder activity",
+          "step1Label": "Configure Activity"
+        }
+    },
+    "arguments": {
+        "execute": {
+           "inArguments":[],
+          "outArguments": [],
+          "url": "https://ca-teste.onrender.com/journeybuilder/execute",
+           "verb": "POST",
+            "body": "",
+            "header": "",
+            "format": "json",
+            "useJwt": true,
+            "timeout": 10000
+        }
+    },
+    "configurationArguments": {
+        "applicationExtensionKey": "f2318cde-3638-42be-808a-0c291721b59e",
+      "save": {
+        "url": "https://ca-teste.onrender.com/journeybuilder/save",
+          "verb": "POST",
+        "useJwt": true
+       },
+       "publish": {
+        "url": "https://ca-teste.onrender.com/journeybuilder/publish",
+           "verb": "POST",
+        "useJwt": true
+       },
+      "stop": {
+        "url": "https://ca-teste.onrender.com/journeybuilder/stop",
+           "verb": "POST",
+        "useJwt": true
+      },
+      "validate": {
+        "url": "https://ca-teste.onrender.com/journeybuilder/validate",
+        "verb": "POST",
+        "useJwt": true
+      }
+    },
+    "wizardSteps": [
+        { "label": "Configure Activity", "key": "step1" }
+    ],
+    "userInterfaces": {
+        "configModal": {
+            "height": 400,
+            "width": 1000,
+          "fullscreen": false
+        }
+    },
+    "schema": {
+        "arguments": {
+            "execute": {
+                "inArguments": [],
+                "outArguments": []
+            }
+        }
+    }
+}
