@@ -21,6 +21,7 @@ server.listen(port,() => console.log("rodando..."));*/
 
 //convertido em express
 const express = require('express');
+require('dotenv').config()
 const app = express();
 const path = require('path');
 app.set("view engine","ejs");
@@ -36,4 +37,5 @@ app.get('/', (req, res) => {
 })
 
 const port = process.env.PORT || 8080;
+console.log("teste env: " + process.env.TESTE)
 app.listen(port, () => console.log("rodando expressssss!!!!"));
